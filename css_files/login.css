@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left-div{
+    width: 50vw;
+    background-color:#FE5920;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-div{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-top{
+    position: relative;
+    flex-grow: 1;
+}
+
+.left-top > img{
+    position: absolute;
+    width:10%;
+    height:70%;
+    left: 0;
+    top:0;
+}
+
+.left-middle{
+    flex-grow: 3;
+}
+
+.left-bottom{
+    flex-grow: 1;
+    position: relative;
+}
+
+.left-bottom > img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.text-div{
+    height: 10%;
+}
+
+.text-div > h1, h3{
+    text-align: center;
+    color:white;
+    margin: 2px;
+}
+
+
+.pic-div{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#human-pic{
+    width:50%;
+    height:50%;
+}
+
+.form{
+    width:40%;
+    height: 80%;
+}
+
+.top-form{
+    height: 34%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-form > img{
+    height: 100%;   
+}
+
+.top-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-text > h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 0;
+    color: #646464;
+}
+
+.bottom-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-text > p {
+    margin-top: 5px;
+    font-size: small;
+    margin-bottom: 0px;
+}
+
+.orange-text{
+    color:#FE5920;
+    padding-left: 4px;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    outline: none; /*me ia largu default styling qe e ka elementi input*/
+    font-size:1em;
+}
+
+.inputs{
+    width: 100%;
+    height: 35px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #C4C4C4;
+}
+
+.inputs:hover{
+    border-color: #FE5920;
+}
+
+.inputs::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 3px;
+}
+
+button{
+    width: 103%;
+    height: 42px;
+    margin: 10px;
+    border-style: none;
+    border-radius: 7px;
+    background-color: #FE5920;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+   
+}
+
+.error{
+    color:red;
+    font-size:small;
+    text-align: center;
+}
+
+.email_input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.password_input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_name_input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last_name_input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
