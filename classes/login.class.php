@@ -28,6 +28,7 @@ class LogIn extends Dbh{
 
             $user = $this->createUser($id, $fname, $lname, $email, $pass, $role);
             $this->setSession($user); 
+            echo $_SESSION['userFirstName'];
             header("Location: ../index.php");
         }
 

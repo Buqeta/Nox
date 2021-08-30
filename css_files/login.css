@@ -33,7 +33,7 @@ body{
     flex-grow: 1;
 }
 
-.left-top > img{
+a > img{
     position: absolute;
     width:10%;
     height:70%;
@@ -181,6 +181,12 @@ button{
 
 .error{
     color:red;
+    font-size:small;
+    text-align: center;
+}
+
+.success{
+    color:rgb(60, 212, 80);
     font-size:small;
     text-align: center;
 }

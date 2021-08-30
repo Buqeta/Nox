@@ -29,7 +29,7 @@ function validate(){
 
     if(pass_value === ""){
         error(password, "Password cannot be blank!");
-       return false;
+        return false;
         // bool = "invalid pass";
         // console.log(bool);
     }
@@ -49,13 +49,12 @@ function validate(){
     }
 }
 
-    
 
-    function error(element, message){
-        const form_element = element.parentElement;
-        const p = form_element.querySelector("span");
-        p.innerHTML = message;
-    }
+function error(element, message){
+    const form_element = element.parentElement;
+    const p = form_element.querySelector("span");
+    p.innerHTML = message;
+}
     
 // });
 

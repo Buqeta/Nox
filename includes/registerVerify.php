@@ -12,6 +12,6 @@ if(isset($_POST['LogInBtn'])){
 
     $register = new Register();
 
-    $register->registerUser($firstName, $lastName, $email, $password);
+    echo $register->registerUser($firstName, $lastName, $email, $password);
 
 }

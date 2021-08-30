@@ -48,7 +48,7 @@
         <div class="main">
             <div class="left-div">
                 <div class="left-top">
-                    <img src="pics/backBufi.svg">
+                    <a href="login.php"><img src="pics/backBufi.svg"></a>
                 </div>
                 <div class="left-middle">
                     <div class="text-div">
