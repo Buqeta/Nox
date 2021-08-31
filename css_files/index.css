@@ -12,16 +12,17 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
 .header{
     width: 100%;
-    height: 20%;
+    height: 18%;
 }
 
 .top-header{
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
 
     justify-content: space-between;
@@ -93,4 +94,157 @@ form{
     background-color: inherit;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+hr{
+    width: 95%;
+    height: 1.5px;
+    background-color: #DFDFDF;
+    border: none;
+}
+
+.bottom-header{
+    height: 33%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links > a{
+    text-decoration: none;
+    color: #302F2F;
+}
+
+#orange{
+    color: #FF4F04;
+}
+
+.slider{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slides{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: centers;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin-right: 0;
+    
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.left-text-button{
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+}
+
+#h2-text{
+    font-weight:lighter;
+    margin-bottom: 0;
+}
+
+#h2-text-2{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.learn-more-button{
+    background-color: #FE4F04;
+    width: 35%;
+    height: 20%;
+    font-size:large;
+    font-weight: lighter;
+    color: white;
+    border-style: none;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+.right > img{
+    width: 75%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+}
+
+#left-arrow{
+    border-style: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 5%;
+}
+
+#right-arrow{
+    border-style: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 5%;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    border:1px solid #707070;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#colored-dot{
+    background-color: #707070;
+}
+
+#second img{
+    width: 40%;
+    height: 75%;
+    left: 30%;
+}
+
+#third img{
+    width: 55%;
+    position: absolute;
+    left: 20%;
+}
+
+#fourth img{
+    height: 70%;
+    position: absolute;
+    top: 15%;
+}
+
+.p-slide{
+    margin-top: 2px;
 }
