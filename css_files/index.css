@@ -3,13 +3,21 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100vh;
-    height: 100vh;
+    width: calc(100vw - (100vw - 100%));
+    
+    
     font-family: 'Montserrat', sans-serif;
 }
 
 .main{
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: calc(100vw - (100vw - 100%));
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -140,7 +148,11 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: centers;
+    align-items: center;
+}
+
+.remove{
+    display: none;
 }
 
 .left{
@@ -148,7 +160,6 @@ hr{
     height: 100%;
     position: relative;
     margin-right: 0;
-    
 }
 
 .right{
@@ -198,12 +209,13 @@ hr{
 }
 
 #left-arrow{
-    border-style: none;
     background-color: white;
+    border-style: none;
     width: 10px;
     height: 10px;
     position: absolute;
     left: 5%;
+    cursor: pointer;
 }
 
 #right-arrow{
@@ -213,6 +225,7 @@ hr{
     height: 10px;
     position: absolute;
     right: 5%;
+    cursor: pointer;
 }
 
 .dot{
@@ -221,9 +234,10 @@ hr{
     border:1px solid #707070;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 
-#colored-dot{
+.active{
     background-color: #707070;
 }
 
@@ -247,4 +261,108 @@ hr{
 
 .p-slide{
     margin-top: 2px;
+}
+
+/*------------2nd slider--------------*/
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider2{
+    width: 80%;
+    height: 145vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+}
+
+.element{
+    padding: 10px;
+    height: 305px;
+    margin: 10px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.product-img{
+    width: 170px;
+    height: 180px;
+}
+
+.dot2{
+    height: 15px;
+    width: 15px;
+    border:1px solid #707070;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#left-arrow2{
+    border-style: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+}
+
+#right-arrow2{
+    border-style: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+}
+
+.heart{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 10%;
+}
+
+.heart-img{
+    width: 25px;
+    height: 30px;
+}
+
+.product-name{
+    margin: 6px 4px;
+    font-weight: 600;
+}
+
+.product-price{
+    margin: 4px 8px;
+    font-weight: 500;
+    color: #6B6969;
+}
+
+.add-to-cart-btn{
+    background-color: #FE4F04;
+    width: 30%;
+    height: 10%;
+    font-size:medium;
+    font-weight: lighter;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
 }
